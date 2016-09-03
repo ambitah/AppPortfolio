@@ -28,27 +28,10 @@ public class AppPortfolio extends AppCompatActivity {
         capstone = (Button) findViewById(R.id.capstone);
     }
 
-    public void onPopClicked(View v){
-        Toast.makeText(AppPortfolio.this, "This button launches Popular Movies App", Toast.LENGTH_SHORT).show();
+    public void onButtonClicked(View v){
+        Button button = (Button) v;
+        String message = "This button launches " + button.getText() + " App";
+        Toast.makeText(AppPortfolio.this, message, Toast.LENGTH_SHORT).show();
     }
 
-    public void onStockClicked(View v){
-        Toast.makeText(AppPortfolio.this, "This button launches Stock Hawk App", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onBuildClicked(View v){
-        Toast.makeText(AppPortfolio.this, "This button launches Build It Bigger App", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onMaterialClicked(View v){
-        Toast.makeText(AppPortfolio.this, "This button launches Make Your App Material App", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onUbiClicked(View v){
-        Toast.makeText(AppPortfolio.this, "This button launches Go Ubiquitous App", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onCapstoneClicked(View v){
-        Toast.makeText(AppPortfolio.this, "This button launches Capstone App", Toast.LENGTH_SHORT).show();
-    }
 }
